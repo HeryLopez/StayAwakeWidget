@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Stay Awake Widget</string>
+
+    <string name="text_main_01">Add the Stay Awake widget in your home screen</string>
+    <string name="text_main_02">The widget is updated automatically every hour if you want to update manually click the refresh button on the widget</string>
+    <string name="stay_awake_setting_is">Stay awake setting is</string>
+    <string name="active">ACTIVE</string>
+    <string name="inactive">INACTIVE</string>
+    <string name="screen_will_sleep_while_charging">Screen will sleep while charging</string>
+    <string name="screen_will_never_sleep_while_charging">Screen will never sleep while charging</string>
+
+</resources>

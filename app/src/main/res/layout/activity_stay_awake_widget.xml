@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/imageButtonWarning"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="4dp"
+                android:layout_alignParentStart="true"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_warning" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_toEndOf="@+id/imageButtonWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stay_awake_setting_is"
+                android:textColor="#de000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@+id/textView"
+                android:text="@string/active"
+                android:textColor="#deff4242"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewInactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@+id/textView"
+                android:text="@string/inactive"
+                android:textColor="#de000000"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textViewDescInactive"
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@+id/imageButtonWarning"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:text="@string/screen_will_sleep_while_charging"
+                android:textColor="#8a000000"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textViewDescActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageButtonWarning"
+                android:layout_below="@+id/textView"
+                android:text="@string/screen_will_never_sleep_while_charging"
+                android:textColor="#8a000000"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSettings"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="8dp"
+                android:layout_toStartOf="@+id/imageButtonReset"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_settings" />
+
+
+            <ImageButton
+                android:id="@+id/imageButtonReset"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_refresh" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
